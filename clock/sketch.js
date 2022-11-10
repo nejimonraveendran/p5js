@@ -3,8 +3,6 @@ this.setup = () => {
   this.frameRate(1);
   this.createCanvas(windowWidth, windowHeight);
   this.colorMode(HSB);
-
-  createLoop({duration:5, gif:true});
 }
 
 this.draw = () => {
