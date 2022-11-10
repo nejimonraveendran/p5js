@@ -3,6 +3,7 @@ let shapes = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  pixelDensity(1);
 }
 
 function draw() {
@@ -26,6 +27,8 @@ function draw() {
       shapes.splice(i, 1);
     }
   }
+
+  //save(`frame_${frameCount}.png`);
 }
 
 function windowResized(){
