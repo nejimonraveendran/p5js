@@ -8,8 +8,12 @@ function setup() {
 function draw() {
   background(10, 50);
   
-  translate(width/2, height/2);
   
+  translate(width/2, height/2);
+  textAlign(CENTER);
+  fill(255);
+  text('Click Anywhere', 0, 0);
+
   for(let i=0;i<shapes.length;i++){
     let shape = shapes[i];
     shape.draw();
@@ -22,8 +26,10 @@ function draw() {
       shapes.splice(i, 1);
     }
   }
-  
-  
+}
+
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function mousePressed(){
