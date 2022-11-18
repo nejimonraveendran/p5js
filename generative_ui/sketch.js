@@ -15,8 +15,14 @@ function setup(){
 
 function draw(){
   background(220);
-  sky.draw(0, 80);
+  sky.draw(220, 380);
   cnTower.draw(width/3.5, height, 40);
+  
+  //add sparkles
+  //add clouds
+  //add faraway buildings
+  //add seasonal particles
+  //change sky to dynamic wavy style
   
 }
 
