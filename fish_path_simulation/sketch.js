@@ -6,7 +6,6 @@ function setup() {
   addNewFish();
 }
 
-
 function draw() {
   background(171, 215, 224);
 
@@ -35,7 +34,6 @@ function draw() {
 function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
 }
-
 
 
 function addNewFish(){
